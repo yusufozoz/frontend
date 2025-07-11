@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Çiçek Bahçesi</title>
+  <link rel="stylesheet" href="deneme.css" />
+</head>
+<body>
+  <div id="login-container">
+    <h2>Giriş Yap / Kayıt Ol</h2>
+    <input type="text" id="username" placeholder="Kullanıcı adı" />
+    <button onclick="login()">Giriş</button>
+  </div>
+
+  <div id="game-container" style="display:none;">
+    <div id="header">
+      <div id="balance">Bakiye: 0 TL</div>
+      <button onclick="signOut()">Çıkış Yap</button>
+    </div>
+    <div id="grid" class="grid"></div>
+  </div>
+
+  <script src="deneme.js"></script>
+</body>
+</html>

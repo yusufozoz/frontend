@@ -1,0 +1,58 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 20px;
+}
+
+#login-container, #game-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(4, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #d2f8d2;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* Büyümekte olan çiçek */
+.cell.growing {
+  background-color: #c0e6a4;
+  background-image: url('https://i.imgur.com/ooB9Vsz.png');
+  background-size: cover;
+  animation: grow 3s linear forwards;
+}
+
+/* Tamamen büyümüş çiçek */
+.cell.grown {
+  background-image: url('https://i.imgur.com/3ZqFfWj.png');
+  background-size: cover;
+  background-color: #a4e4a4;
+}
+
+@keyframes grow {
+  0% { transform: scale(0.2); }
+  50% { transform: scale(0.6); }
+  100% { transform: scale(1); }
+}
