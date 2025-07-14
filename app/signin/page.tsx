@@ -17,7 +17,7 @@ export default function SignIn() {
     if (userObject[name] && userObject[name] === password) {
       setMessage("Giriş başarılı! Yönlendiriliyorsunuz...");
       setTimeout(() => {
-        router.push("/tarla");
+        router.push("../tarla");
       }, 1000);
     } else {
       setMessage("Kullanıcı adı veya şifre hatalı");

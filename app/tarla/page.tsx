@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
-import FazlaTarla from "./tarla/tarla"; // doğru klasördeyse bu yeterli
-// Eğer farklı bir klasördeyse import yolunu ayarlamalısın
+import FazlaTarla from "./tarla";
 
 const Page = () => {
   return (

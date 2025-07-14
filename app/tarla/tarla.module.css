@@ -1,0 +1,26 @@
+.container {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.storeButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 360px;
+  margin: 0 auto;
+}
